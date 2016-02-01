@@ -27,6 +27,9 @@ let triangle = SKSpriteNode(imageNamed: "triangle")
 triangle.name = "shape"
 triangle.position = CGPoint(x: scene.size.width * 0.75, y: scene.size.height * 0.50)
 
+
+
+
 scene.addChild(triangle)
 scene.addChild(circle)
 scene.addChild(square)
