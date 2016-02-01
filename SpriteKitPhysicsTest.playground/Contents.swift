@@ -13,6 +13,7 @@ sceneView.presentScene(scene)
 
 XCPShowView("MyScene", view: sceneView)
 
+
 let square = SKSpriteNode(imageNamed: "square")
 square.name = "shape"
 square.position = CGPoint(x: scene.size.width * 0.25, y: scene.size.height * 0.50)
