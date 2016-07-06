@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0360B5021D2D0AEF00D8F15F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0360B5001D2D0AEF00D8F15F /* Interface.storyboard */; };
+		0360B5041D2D0AEF00D8F15F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0360B5031D2D0AEF00D8F15F /* Assets.xcassets */; };
+		0360B50B1D2D0AEF00D8F15F /* CatNapWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0360B50A1D2D0AEF00D8F15F /* CatNapWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0360B5121D2D0AF000D8F15F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B5111D2D0AF000D8F15F /* InterfaceController.swift */; };
+		0360B5141D2D0AF000D8F15F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0360B5131D2D0AF000D8F15F /* GameScene.sks */; };
+		0360B5161D2D0AF000D8F15F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B5151D2D0AF000D8F15F /* GameScene.swift */; };
+		0360B5181D2D0AF000D8F15F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B5171D2D0AF000D8F15F /* ExtensionDelegate.swift */; };
+		0360B51A1D2D0AF000D8F15F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B5191D2D0AF000D8F15F /* NotificationController.swift */; };
+		0360B51C1D2D0AF000D8F15F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0360B51B1D2D0AF000D8F15F /* Assets.xcassets */; };
+		0360B5201D2D0AF000D8F15F /* CatNapWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0360B4FE1D2D0AEF00D8F15F /* CatNapWatch.app */; };
+		0360B52D1D2D325B00D8F15F /* Cat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0360B52C1D2D325B00D8F15F /* Cat.sks */; };
+		03AFA8DC1D2D52AA00A41BC0 /* CatCurl.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03AFA8DB1D2D52AA00A41BC0 /* CatCurl.sks */; };
+		03AFA8DE1D2D543800A41BC0 /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03AFA8DD1D2D543800A41BC0 /* CatWakeUp.sks */; };
 		E72675391C54D1B000184C35 /* Cat.sks in Resources */ = {isa = PBXBuildFile; fileRef = E72675381C54D1B000184C35 /* Cat.sks */; };
 		E74A04231C5546D100E39BBE /* CatCurl.sks in Resources */ = {isa = PBXBuildFile; fileRef = E74A04221C5546D100E39BBE /* CatCurl.sks */; };
 		E74A04271C55481F00E39BBE /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = E74A04261C55481F00E39BBE /* CatWakeUp.sks */; };
@@ -24,7 +37,65 @@
 		E7F2E4151C53EF42007EFA32 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7F2E4101C53EF42007EFA32 /* win.mp3 */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0360B50C1D2D0AF000D8F15F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7F2E3EA1C53E5F5007EFA32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0360B5091D2D0AEF00D8F15F;
+			remoteInfo = "CatNapWatch Extension";
+		};
+		0360B51E1D2D0AF000D8F15F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7F2E3EA1C53E5F5007EFA32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0360B4FD1D2D0AEF00D8F15F;
+			remoteInfo = CatNapWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0360B5241D2D0AF000D8F15F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0360B50B1D2D0AEF00D8F15F /* CatNapWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0360B5281D2D0AF000D8F15F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0360B5201D2D0AF000D8F15F /* CatNapWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0360B4FE1D2D0AEF00D8F15F /* CatNapWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatNapWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0360B5011D2D0AEF00D8F15F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0360B5031D2D0AEF00D8F15F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0360B5051D2D0AEF00D8F15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0360B50A1D2D0AEF00D8F15F /* CatNapWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CatNapWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0360B5101D2D0AF000D8F15F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0360B5111D2D0AF000D8F15F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0360B5131D2D0AF000D8F15F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		0360B5151D2D0AF000D8F15F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		0360B5171D2D0AF000D8F15F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0360B5191D2D0AF000D8F15F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0360B51B1D2D0AF000D8F15F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0360B51D1D2D0AF000D8F15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0360B52C1D2D325B00D8F15F /* Cat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Cat.sks; path = ../Cat.sks; sourceTree = "<group>"; };
+		03AFA8DB1D2D52AA00A41BC0 /* CatCurl.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurl.sks; sourceTree = "<group>"; };
+		03AFA8DD1D2D543800A41BC0 /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
 		E72675381C54D1B000184C35 /* Cat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cat.sks; sourceTree = "<group>"; };
 		E74A04221C5546D100E39BBE /* CatCurl.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurl.sks; sourceTree = "<group>"; };
 		E74A04261C55481F00E39BBE /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
@@ -45,6 +116,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0360B5071D2D0AEF00D8F15F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7F2E3EF1C53E5F5007EFA32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,6 +133,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0360B4FF1D2D0AEF00D8F15F /* CatNapWatch */ = {
+			isa = PBXGroup;
+			children = (
+				0360B5001D2D0AEF00D8F15F /* Interface.storyboard */,
+				0360B5031D2D0AEF00D8F15F /* Assets.xcassets */,
+				0360B5051D2D0AEF00D8F15F /* Info.plist */,
+			);
+			path = CatNapWatch;
+			sourceTree = "<group>";
+		};
+		0360B50E1D2D0AF000D8F15F /* CatNapWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0360B5291D2D31C400D8F15F /* Scenes */,
+				0360B5111D2D0AF000D8F15F /* InterfaceController.swift */,
+				0360B5151D2D0AF000D8F15F /* GameScene.swift */,
+				0360B5171D2D0AF000D8F15F /* ExtensionDelegate.swift */,
+				0360B5191D2D0AF000D8F15F /* NotificationController.swift */,
+				0360B51B1D2D0AF000D8F15F /* Assets.xcassets */,
+				0360B51D1D2D0AF000D8F15F /* Info.plist */,
+				0360B50F1D2D0AF000D8F15F /* Supporting Files */,
+			);
+			path = "CatNapWatch Extension";
+			sourceTree = "<group>";
+		};
+		0360B50F1D2D0AF000D8F15F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0360B5101D2D0AF000D8F15F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0360B5291D2D31C400D8F15F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0360B5131D2D0AF000D8F15F /* GameScene.sks */,
+				03AFA8DB1D2D52AA00A41BC0 /* CatCurl.sks */,
+				03AFA8DD1D2D543800A41BC0 /* CatWakeUp.sks */,
+				0360B52C1D2D325B00D8F15F /* Cat.sks */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
 		E780AD4E1C54C36200243DE9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				E7F2E3F41C53E5F5007EFA32 /* CatNap */,
+				0360B4FF1D2D0AEF00D8F15F /* CatNapWatch */,
+				0360B50E1D2D0AF000D8F15F /* CatNapWatch Extension */,
 				E7F2E3F31C53E5F5007EFA32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				E7F2E3F21C53E5F5007EFA32 /* CatNap.app */,
+				0360B4FE1D2D0AEF00D8F15F /* CatNapWatch.app */,
+				0360B50A1D2D0AEF00D8F15F /* CatNapWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +239,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0360B4FD1D2D0AEF00D8F15F /* CatNapWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0360B5251D2D0AF000D8F15F /* Build configuration list for PBXNativeTarget "CatNapWatch" */;
+			buildPhases = (
+				0360B4FC1D2D0AEF00D8F15F /* Resources */,
+				0360B5241D2D0AF000D8F15F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0360B50D1D2D0AF000D8F15F /* PBXTargetDependency */,
+			);
+			name = CatNapWatch;
+			productName = CatNapWatch;
+			productReference = 0360B4FE1D2D0AEF00D8F15F /* CatNapWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0360B5091D2D0AEF00D8F15F /* CatNapWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0360B5211D2D0AF000D8F15F /* Build configuration list for PBXNativeTarget "CatNapWatch Extension" */;
+			buildPhases = (
+				0360B5061D2D0AEF00D8F15F /* Sources */,
+				0360B5071D2D0AEF00D8F15F /* Frameworks */,
+				0360B5081D2D0AEF00D8F15F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CatNapWatch Extension";
+			productName = "CatNapWatch Extension";
+			productReference = 0360B50A1D2D0AEF00D8F15F /* CatNapWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		E7F2E3F11C53E5F5007EFA32 /* CatNap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7F2E4081C53E5F5007EFA32 /* Build configuration list for PBXNativeTarget "CatNap" */;
@@ -120,10 +280,12 @@
 				E7F2E3EE1C53E5F5007EFA32 /* Sources */,
 				E7F2E3EF1C53E5F5007EFA32 /* Frameworks */,
 				E7F2E3F01C53E5F5007EFA32 /* Resources */,
+				0360B5281D2D0AF000D8F15F /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0360B51F1D2D0AF000D8F15F /* PBXTargetDependency */,
 			);
 			name = CatNap;
 			productName = CatNap;
@@ -136,12 +298,27 @@
 		E7F2E3EA1C53E5F5007EFA32 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Владимир Невинный";
 				TargetAttributes = {
+					0360B4FD1D2D0AEF00D8F15F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ML92WQMC99;
+						DevelopmentTeamName = "Vladimir Nevinnyi";
+						ProvisioningStyle = Automatic;
+					};
+					0360B5091D2D0AEF00D8F15F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ML92WQMC99;
+						DevelopmentTeamName = "Vladimir Nevinnyi";
+						ProvisioningStyle = Automatic;
+					};
 					E7F2E3F11C53E5F5007EFA32 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ML92WQMC99;
+						DevelopmentTeamName = "Vladimir Nevinnyi";
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -159,11 +336,34 @@
 			projectRoot = "";
 			targets = (
 				E7F2E3F11C53E5F5007EFA32 /* CatNap */,
+				0360B4FD1D2D0AEF00D8F15F /* CatNapWatch */,
+				0360B5091D2D0AEF00D8F15F /* CatNapWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0360B4FC1D2D0AEF00D8F15F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0360B5041D2D0AEF00D8F15F /* Assets.xcassets in Resources */,
+				0360B5021D2D0AEF00D8F15F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0360B5081D2D0AEF00D8F15F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03AFA8DC1D2D52AA00A41BC0 /* CatCurl.sks in Resources */,
+				0360B52D1D2D325B00D8F15F /* Cat.sks in Resources */,
+				0360B51C1D2D0AF000D8F15F /* Assets.xcassets in Resources */,
+				03AFA8DE1D2D543800A41BC0 /* CatWakeUp.sks in Resources */,
+				0360B5141D2D0AF000D8F15F /* GameScene.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7F2E3F01C53E5F5007EFA32 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +386,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0360B5061D2D0AEF00D8F15F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0360B5161D2D0AF000D8F15F /* GameScene.swift in Sources */,
+				0360B5121D2D0AF000D8F15F /* InterfaceController.swift in Sources */,
+				0360B51A1D2D0AF000D8F15F /* NotificationController.swift in Sources */,
+				0360B5181D2D0AF000D8F15F /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7F2E3EE1C53E5F5007EFA32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,7 +409,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0360B50D1D2D0AF000D8F15F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0360B5091D2D0AEF00D8F15F /* CatNapWatch Extension */;
+			targetProxy = 0360B50C1D2D0AF000D8F15F /* PBXContainerItemProxy */;
+		};
+		0360B51F1D2D0AF000D8F15F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0360B4FD1D2D0AEF00D8F15F /* CatNapWatch */;
+			targetProxy = 0360B51E1D2D0AF000D8F15F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		0360B5001D2D0AEF00D8F15F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0360B5011D2D0AEF00D8F15F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		E7F2E3FD1C53E5F5007EFA32 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -218,6 +450,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0360B5221D2D0AF000D8F15F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "CatNapWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nevinniyvladimir.CatNap.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		0360B5231D2D0AF000D8F15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = "CatNapWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nevinniyvladimir.CatNap.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		0360B5261D2D0AF000D8F15F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				IBSC_MODULE = CatNapWatch_Extension;
+				INFOPLIST_FILE = CatNapWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nevinniyvladimir.CatNap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		0360B5271D2D0AF000D8F15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				IBSC_MODULE = CatNapWatch_Extension;
+				INFOPLIST_FILE = CatNapWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nevinniyvladimir.CatNap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 		E7F2E4061C53E5F5007EFA32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -309,6 +621,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nevinniyvladimir.CatNap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -320,12 +633,31 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nevinniyvladimir.CatNap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0360B5211D2D0AF000D8F15F /* Build configuration list for PBXNativeTarget "CatNapWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0360B5221D2D0AF000D8F15F /* Debug */,
+				0360B5231D2D0AF000D8F15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0360B5251D2D0AF000D8F15F /* Build configuration list for PBXNativeTarget "CatNapWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0360B5261D2D0AF000D8F15F /* Debug */,
+				0360B5271D2D0AF000D8F15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E7F2E3ED1C53E5F5007EFA32 /* Build configuration list for PBXProject "CatNap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
