@@ -8,6 +8,12 @@
 
 import SpriteKit
 
+
+protocol CustomNodeEvents {
+    func didMoveToScene()
+}
+
+
 class GameScene: SKScene {
     
     private var spinnyNode : SKShapeNode?
