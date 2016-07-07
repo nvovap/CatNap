@@ -31,7 +31,7 @@ class GameScene: SKScene {
         enumerateChildNodes(withName: "//*") { (node: SKNode, _ ) in
             
             print(node.name)
-            
+             
             if let customNode = node as? CustomNodeEvents {
                 customNode.didMoveToScene()
             }
