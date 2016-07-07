@@ -7,7 +7,7 @@
 //
 import SpriteKit
 
-class BedNode: SKSpriteNode, CustomNodeEvents {
+class CatNode: SKSpriteNode, CustomNodeEvents {
     func didMoveToScene() {
         print("Cat added to scene")
     }

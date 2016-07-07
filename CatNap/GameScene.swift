@@ -16,7 +16,7 @@ class GameScene: SKScene {
     
     
     var bedNode: BedNode!
-    var catNode: catNode!
+//    var catNode: CatNode!
     
     
     override func didMove(to view: SKView) {
@@ -29,18 +29,21 @@ class GameScene: SKScene {
         physicsBody = SKPhysicsBody(edgeLoopFrom: playableRect)
         
         enumerateChildNodes(withName: "//*") { (node: SKNode, _ ) in
+            
+            print(node.name)
+            
             if let customNode = node as? CustomNodeEvents {
                 customNode.didMoveToScene()
             }
         }
         
         
-        bedNode = childNodeWithName("bed") as! BedNode
-        catNode = childNodeWithName("//cat_body") as! CatNode
+        bedNode = childNode(withName: "bed") as! BedNode
+//        catNode = childNode(withName: "//cat_body") as! CatNode
         
         
         bedNode.setScale(1.5)
-        catNode.setScale*1.5)
+//        catNode.setScale(1.5)
         
     }
     
