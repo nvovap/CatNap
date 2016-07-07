@@ -17,9 +17,11 @@
 		0360B51A1D2D0AF000D8F15F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B5191D2D0AF000D8F15F /* NotificationController.swift */; };
 		0360B51C1D2D0AF000D8F15F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0360B51B1D2D0AF000D8F15F /* Assets.xcassets */; };
 		0360B5201D2D0AF000D8F15F /* CatNapWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0360B4FE1D2D0AEF00D8F15F /* CatNapWatch.app */; };
-		0360B52D1D2D325B00D8F15F /* Cat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0360B52C1D2D325B00D8F15F /* Cat.sks */; };
-		03AFA8DC1D2D52AA00A41BC0 /* CatCurl.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03AFA8DB1D2D52AA00A41BC0 /* CatCurl.sks */; };
-		03AFA8DE1D2D543800A41BC0 /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03AFA8DD1D2D543800A41BC0 /* CatWakeUp.sks */; };
+		0360B52D1D2D325B00D8F15F /* CatW.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0360B52C1D2D325B00D8F15F /* CatW.sks */; };
+		036DFCC91D2E438400B2B400 /* BedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DFCC81D2E438400B2B400 /* BedNode.swift */; };
+		036DFCCB1D2E528300B2B400 /* CatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DFCCA1D2E528300B2B400 /* CatNode.swift */; };
+		03AFA8DC1D2D52AA00A41BC0 /* CatCurlW.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03AFA8DB1D2D52AA00A41BC0 /* CatCurlW.sks */; };
+		03AFA8DE1D2D543800A41BC0 /* CatWakeUpW.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03AFA8DD1D2D543800A41BC0 /* CatWakeUpW.sks */; };
 		E72675391C54D1B000184C35 /* Cat.sks in Resources */ = {isa = PBXBuildFile; fileRef = E72675381C54D1B000184C35 /* Cat.sks */; };
 		E74A04231C5546D100E39BBE /* CatCurl.sks in Resources */ = {isa = PBXBuildFile; fileRef = E74A04221C5546D100E39BBE /* CatCurl.sks */; };
 		E74A04271C55481F00E39BBE /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = E74A04261C55481F00E39BBE /* CatWakeUp.sks */; };
@@ -93,9 +95,11 @@
 		0360B5191D2D0AF000D8F15F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		0360B51B1D2D0AF000D8F15F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0360B51D1D2D0AF000D8F15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0360B52C1D2D325B00D8F15F /* Cat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Cat.sks; path = ../Cat.sks; sourceTree = "<group>"; };
-		03AFA8DB1D2D52AA00A41BC0 /* CatCurl.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurl.sks; sourceTree = "<group>"; };
-		03AFA8DD1D2D543800A41BC0 /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
+		0360B52C1D2D325B00D8F15F /* CatW.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = CatW.sks; path = ../CatW.sks; sourceTree = "<group>"; };
+		036DFCC81D2E438400B2B400 /* BedNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedNode.swift; sourceTree = "<group>"; };
+		036DFCCA1D2E528300B2B400 /* CatNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatNode.swift; sourceTree = "<group>"; };
+		03AFA8DB1D2D52AA00A41BC0 /* CatCurlW.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurlW.sks; sourceTree = "<group>"; };
+		03AFA8DD1D2D543800A41BC0 /* CatWakeUpW.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUpW.sks; sourceTree = "<group>"; };
 		E72675381C54D1B000184C35 /* Cat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cat.sks; sourceTree = "<group>"; };
 		E74A04221C5546D100E39BBE /* CatCurl.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurl.sks; sourceTree = "<group>"; };
 		E74A04261C55481F00E39BBE /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
@@ -170,9 +174,9 @@
 			isa = PBXGroup;
 			children = (
 				0360B5131D2D0AF000D8F15F /* GameScene.sks */,
-				03AFA8DB1D2D52AA00A41BC0 /* CatCurl.sks */,
-				03AFA8DD1D2D543800A41BC0 /* CatWakeUp.sks */,
-				0360B52C1D2D325B00D8F15F /* Cat.sks */,
+				03AFA8DB1D2D52AA00A41BC0 /* CatCurlW.sks */,
+				03AFA8DD1D2D543800A41BC0 /* CatWakeUpW.sks */,
+				0360B52C1D2D325B00D8F15F /* CatW.sks */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -215,6 +219,8 @@
 				E7F2E40B1C53EF42007EFA32 /* Sounds */,
 				E7F2E3F51C53E5F5007EFA32 /* AppDelegate.swift */,
 				E7F2E3F91C53E5F5007EFA32 /* GameScene.swift */,
+				036DFCCA1D2E528300B2B400 /* CatNode.swift */,
+				036DFCC81D2E438400B2B400 /* BedNode.swift */,
 				E7F2E3FB1C53E5F5007EFA32 /* GameViewController.swift */,
 				E7F2E3FD1C53E5F5007EFA32 /* Main.storyboard */,
 				E7F2E4001C53E5F5007EFA32 /* Assets.xcassets */,
@@ -356,10 +362,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03AFA8DC1D2D52AA00A41BC0 /* CatCurl.sks in Resources */,
-				0360B52D1D2D325B00D8F15F /* Cat.sks in Resources */,
+				03AFA8DC1D2D52AA00A41BC0 /* CatCurlW.sks in Resources */,
+				0360B52D1D2D325B00D8F15F /* CatW.sks in Resources */,
 				0360B51C1D2D0AF000D8F15F /* Assets.xcassets in Resources */,
-				03AFA8DE1D2D543800A41BC0 /* CatWakeUp.sks in Resources */,
+				03AFA8DE1D2D543800A41BC0 /* CatWakeUpW.sks in Resources */,
 				0360B5141D2D0AF000D8F15F /* GameScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +408,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7F2E3FA1C53E5F5007EFA32 /* GameScene.swift in Sources */,
+				036DFCCB1D2E528300B2B400 /* CatNode.swift in Sources */,
+				036DFCC91D2E438400B2B400 /* BedNode.swift in Sources */,
 				E7F2E3FC1C53E5F5007EFA32 /* GameViewController.swift in Sources */,
 				E7F2E3F61C53E5F5007EFA32 /* AppDelegate.swift in Sources */,
 			);
