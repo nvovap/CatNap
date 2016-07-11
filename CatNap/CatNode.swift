@@ -10,6 +10,10 @@ import SpriteKit
 class CatNode: SKSpriteNode, CustomNodeEvents {
     func didMoveToScene() {
         print("Cat added to scene")
+        
+        let catBodyTexture = SKTexture(imageNamed: "cat_body_outline")
+        parent!.physicsBody = SKPhysicsBody(texture: catBodyTexture, size: catBodyTexture.size())
+        
     }
     
 }
