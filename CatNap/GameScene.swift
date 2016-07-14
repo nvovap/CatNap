@@ -23,9 +23,10 @@ struct PhysicsCategory {
     static let Cat:   UInt32 = 0b1
     static let Block: UInt32 = 0b10
     static let Bed:   UInt32 = 0b100
+    static let Edge:  UInt32 = 0b1000
 }
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     var bedNode: BedNode!
@@ -45,6 +46,11 @@ class GameScene: SKScene {
         
         physicsBody = SKPhysicsBody(edgeLoopFrom: playableRect)
         
+        physicsWorld.contactDelegate = self
+        physicsBody!.categoryBitMask = PhysicsCategory.Edge
+        
+        
+        
         enumerateChildNodes(withName: "//*") { (node: SKNode, _ ) in
             
             print(node.name)
@@ -61,6 +67,24 @@ class GameScene: SKScene {
         
       
         
+    }
+    
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        
+        let collision = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
+        
+        
+        if collision == PhysicsCategory.Cat | PhysicsCategory.Bed {
+            print("SUCCESS")
+        } else if collision == PhysicsCategory.Cat | PhysicsCategory.Edge {
+            print("FAIL")
+        }
+        
+    }
+    
+    func didEnd(_ contact: SKPhysicsContact) {
+        //print(contact)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
